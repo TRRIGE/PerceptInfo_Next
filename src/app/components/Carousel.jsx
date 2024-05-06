@@ -6,7 +6,7 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % 2);
-    }, 2000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
